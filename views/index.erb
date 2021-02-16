@@ -1,4 +1,8 @@
-<h1>My name is <%= @name %></h1>
+<h1>My name is <%= @name == "" ? name = "Jeff" : @name  %></h1>
 <div>
 		<img src='http://pictures-of-cats.org/wp-content/uploads/2015/06/sad-cat-s.jpg' style='border: 3px dashed #8A2BE2'>
+		<form action = "/named-cat">
+			<input type="text" name="name">
+			<input type="submit" value="Submit">
+		</form>
 </div>
